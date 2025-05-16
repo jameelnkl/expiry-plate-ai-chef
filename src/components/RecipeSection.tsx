@@ -5,7 +5,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Clock, Utensils } from 'lucide-react';
-import { Recipe } from '@/lib/data';
+import { Recipe } from '@/lib/types';
 
 interface RecipeSectionProps {
   recipes: Recipe[];

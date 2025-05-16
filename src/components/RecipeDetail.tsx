@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Recipe } from '@/lib/data';
+import { Recipe } from '@/lib/types';
 import { useNavigate } from 'react-router-dom';
 
 interface RecipeDetailProps {
