@@ -189,7 +189,7 @@ export const sampleRecipes: Recipe[] = [
 ];
 
 // Function to get recommended recipes based on expiring ingredients
-export const getRecommendedRecipes = (ingredients: Ingredient[]: Recipe[]) => {
+export const getRecommendedRecipes = (ingredients: Ingredient[]): Recipe[] => {
   const expiringIngredients = ingredients.filter(ingredient => {
     const status = getExpiryStatus(ingredient.expiryDate);
     return status === 'critical' || status === 'warning';
@@ -216,3 +216,4 @@ export const getRecommendedRecipes = (ingredients: Ingredient[]: Recipe[]) => {
     .sort((a, b) => b.matchScore - a.matchScore)
     .map(item => item.recipe);
 };
+
