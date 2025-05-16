@@ -120,7 +120,7 @@ const ScanSection = () => {
                           <div className="font-medium">Tomatoes</div>
                           
                           <Label className="text-muted-foreground">Quantity:</Label>
-                          <div className="font-medium">3 medium</div>
+                          <div className="font-medium">3</div>
                           
                           <Label className="text-muted-foreground">Best Before:</Label>
                           <div className="font-medium">May 18, 2025</div>
