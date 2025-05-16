@@ -2,6 +2,12 @@
 import { formatDistanceToNow } from 'date-fns';
 import { Ingredient, Recipe } from './types';
 import { sampleRecipes } from './data';
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(...inputs))
+}
 
 // Helper functions for expiry date handling
 export const getExpiryStatus = (date: Date) => {
